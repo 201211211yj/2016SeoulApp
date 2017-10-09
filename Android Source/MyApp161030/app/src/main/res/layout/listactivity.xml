@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPink">
+    <Button
+        android:layout_gravity="left"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="backClick"
+        android:background="@drawable/ic_left"/>
+    <Button
+        android:layout_gravity="right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="findClick"
+        android:background="@drawable/ic_find"/>
+
+</GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_window"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="findClick2"
+            android:id="@+id/list_find2"
+            android:background="@drawable/ic_find"
+            android:layout_gravity="right|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:hint="이름검색"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_searchEdit"
+            android:layout_gravity="center"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/list_find2"
+            android:layout_toEndOf="@+id/list_find2" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView" />
+
+</LinearLayout>

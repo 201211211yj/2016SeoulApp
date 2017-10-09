@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:background="@drawable/dialog_window">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" 공지사항"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:id="@+id/notice_newbtn"
+            android:background="@drawable/ic_add"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+    <ExpandableListView
+        android:id="@+id/notice_ExpList"
+        android:groupIndicator="@null"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"/>
+
+</LinearLayout>

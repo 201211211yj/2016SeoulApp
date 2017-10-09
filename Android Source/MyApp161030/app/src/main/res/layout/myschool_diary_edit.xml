@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/dialog_window">
+
+        <Button
+            android:id="@+id/diary_savebtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text ="저장"
+            android:onClick="diary_edit_clicksave"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/dialog_window"/>
+
+        <Button
+            android:id="@+id/diary_exitbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text ="취소"
+            android:textColor="#ff8e8e"
+            android:onClick="diary_edit_clickexit"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/dialog_window"/>
+
+        <TextView
+            android:id="@+id/diary_datetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "날짜"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background = "@color/colorPink">
+        <EditText
+            android:id="@+id/diary_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            android:gravity="top"
+            android:background="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

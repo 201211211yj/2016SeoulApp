@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/dialog_window"
+        android:orientation="vertical" >
+
+
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="130dp"
+            android:id="@+id/btn_left"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:background="@drawable/dialog_window"
+            android:textStyle="bold"
+            android:layout_gravity="center|bottom" />
+
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:text= "알림"
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+
+</LinearLayout>

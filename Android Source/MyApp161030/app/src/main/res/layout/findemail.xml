@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록한 E-mail을 입력하세요"/>
+    <EditText
+        android:id="@+id/findemail_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+    <Button
+        android:id="@+id/findemail_checkbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text = "확인"
+        android:background="@drawable/dialog_window"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/findemail_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text = "비밀번호 찾기"
+        android:textColor="#ff8888"
+        android:background="@drawable/dialog_window"/>
+
+</LinearLayout>

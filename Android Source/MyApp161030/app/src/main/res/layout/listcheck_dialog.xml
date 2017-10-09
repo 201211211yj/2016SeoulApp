@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+<FrameLayout
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:background="@drawable/dialog_window">
+
+    <TextView
+        android:text= "검색설정"
+        android:id="@+id/txt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/listcheck_btn_left"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_margin="10dp"
+        android:background="@drawable/dialog_window"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:id="@+id/listcheck_btn_right"
+        android:layout_width="130dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_window"
+        android:text="취소"
+        android:layout_gravity="right|bottom" />
+
+    <LinearLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <GridLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역"/>
+
+            <Spinner
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listcheck_locspinn" />
+        </GridLayout>
+        <GridLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유형"/>
+            <Spinner
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listcheck_typespin" />
+        </GridLayout>
+        <GridLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CCTV 유무"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listcheck_cctvchk"
+                android:layout_gravity="right"/>
+        </GridLayout>
+        <GridLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="버스운행"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listcheck_buschk"
+                android:layout_gravity="right"/>
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+</LinearLayout>

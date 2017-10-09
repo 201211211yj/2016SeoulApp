@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background = "@drawable/dialog_window">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="작성하기"
+            android:textSize="15dp"
+            android:id="@+id/dailymenu_newbtn"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="right|center_vertical" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:id="@+id/dailymenu_date"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:textSize="15dp"
+            android:id="@+id/dailymenu_datebtn"
+            android:text="날짜선택"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="left|center_vertical" />
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin = "10dp"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:textSize="15dp"
+            android:text="원산지"
+            android:background="@drawable/dialog_side_down"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:text="식단"
+            android:background="@drawable/dialog_side_down"/>
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dailymenu_listview"></ListView>
+</LinearLayout>

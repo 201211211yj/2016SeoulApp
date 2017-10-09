@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/notice_listitem_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:textSize="20dip"
+        android:text="title"/>
+
+    <Button
+        android:layout_gravity="center_vertical"
+        android:id="@+id/notice_listitem_editbtn"
+        android:layout_marginRight="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/ic_create"
+        android:layout_row="0"
+        android:layout_column="17" />
+
+    <Button
+        android:layout_gravity="center_vertical"
+        android:nextFocusLeft="@id/notice_listitem_editbtn"
+        android:id="@+id/notice_listitem_delbtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/ic_delete"
+        android:layout_row="0"
+        android:layout_column="18" />
+</GridLayout>

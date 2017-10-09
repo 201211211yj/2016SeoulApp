@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regimember_email"
+                android:text="email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regimember_date"
+                android:text="date"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/regimember_cancelbtn"
+            android:layout_toStartOf="@+id/regimember_cancelbtn"
+            android:id="@+id/regimember_regibtn"
+            android:background="@drawable/ic_done"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/regimember_cancelbtn"
+            android:background="@drawable/ic_delete"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_margin="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:layout_weight="0.25"
+            android:text="E-mail"/>
+        <TextView
+            android:gravity="left|center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_info_email"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="password"
+            android:layout_weight="0.25"
+            android:gravity="left|center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/regi_info_pwrd"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="pwd_check"
+            android:layout_weight="0.25"
+            android:gravity="left|center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/regi_info_pwrdchk"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="name"
+            android:layout_weight="0.25"
+            android:gravity="left|center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_info_name"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="left|center"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="childname"
+            android:layout_weight="0.25"
+            android:gravity="left|center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_info_childname"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_editnumber"
+            android:layout_weight="0.64"/>
+        <Button
+            android:text="인증번호발송"
+            android:textStyle="bold"
+            android:textSize="11dp"
+            android:textColor="#ff8686"
+            android:onClick="regi_info_randnum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_sendmail"
+            android:layout_weight="0.36"
+            android:layout_margin="5dp"
+            android:background="@drawable/dialog_window"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:text="인증번호는 E-mail로 전송됩니다."
+        android:gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <Button
+            android:text="확    인"
+            android:textStyle="bold"
+            android:onClick="regi_info_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/regi_info_check"
+            android:background="@drawable/dialog_window"/>
+
+    </LinearLayout>
+</LinearLayout>

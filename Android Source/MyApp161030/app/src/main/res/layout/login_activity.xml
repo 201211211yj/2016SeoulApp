@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:padding = "10dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.67"
+        android:background="#ffffff"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:background="@drawable/ic_main"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.06">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="자동로그인"
+            android:id="@+id/auto_login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.17"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width = "0dp"
+                android:layout_weight="0.75"
+                android:layout_height = "match_parent"
+                android:orientation = "vertical"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width = "match_parent"
+                    android:layout_height = "0dp"
+                    android:layout_weight="0.5"
+                    android:hint = "E-mail"
+                    android:id= "@+id/login_edit_email"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                    android:layout_width = "match_parent"
+                    android:layout_height = "0dp"
+                    android:layout_weight="0.5"
+                    android:hint = "비밀번호"
+                    android:id="@+id/login_edit_password"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width = "0dp"
+                android:layout_weight="0.25"
+                android:layout_height = "match_parent"
+                android:text = "로그인"
+                android:onClick="login"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity = "center"
+            android:weightSum="1">
+           <Button
+                android:layout_width = "0dp"
+                android:layout_weight="0.32"
+                android:layout_height = "match_parent"
+                android:text = "계정 찾기"
+                android:background="#ffffff"
+                android:onClick="email_find"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:layout_width = "0dp"
+                android:layout_weight="0.32"
+                android:layout_height = "match_parent"
+                android:text = "회원가입"
+                android:background="#ffffff"
+                android:onClick="register"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.02"
+                android:background="@color/colorPrimary"/>
+            <Button
+                android:layout_width = "0dp"
+                android:layout_weight="0.32"
+                android:layout_height = "match_parent"
+                android:text = "비회원 로그인"
+                android:background="#ffffff"
+                android:onClick="login_guest"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

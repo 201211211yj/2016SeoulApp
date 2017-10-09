@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@drawable/dialog_window"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/imgdialog_btn_left"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="삭제"
+            android:textColor="#ff7777"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="left|bottom" />
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/imgdialog_btn_right"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="right|bottom" />
+
+        <ImageView
+            android:id="@+id/imgdialog_imgview"
+            android:scaleType="centerInside"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+
+</LinearLayout>

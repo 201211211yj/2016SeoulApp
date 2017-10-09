@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffac8">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/dialog_window"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/A2_diary_edit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text = "작성하기"
+            android:textSize="15dp"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="right|center_vertical" />
+
+        <Button
+            android:id="@+id/A2_diary_check"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="날짜선택"
+            android:textSize="15dp"
+            android:background="@drawable/dialog_window"
+            android:layout_gravity="left|center_vertical" />
+
+        <TextView
+            android:layout_width="193dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/A2_diary_date"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/A2_diary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = "  "/>
+    </LinearLayout>
+</LinearLayout>
